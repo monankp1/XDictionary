@@ -25,7 +25,7 @@ const Dictionary = () => {
                 }
             });
         if(!found) {
-            setData("Word not found in the dictionary");
+            setData("Word not found in the dictionary.");
             setIsVisible(true);
         }
 
@@ -37,6 +37,7 @@ const Dictionary = () => {
     <div>
         <h1>Dictionary App</h1>
         <input 
+            type='text'
             value={input}
             onChange={(e) => setInput(e.target.value)}
         />
